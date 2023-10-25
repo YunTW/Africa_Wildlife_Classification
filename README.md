@@ -1,11 +1,9 @@
 # Africa Wildlife Classification
 
-![Python](https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/Opencv-5C3EE8.svg?logo=Opencv&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=TensorFlow&logoColor=white)
+![Python](https://img.shields.io/badge/Python-14354C.svg?logo=python&logoColor=white) ![OpenCV](https://img.shields.io/badge/Opencv-5C3EE8.svg?logo=Opencv&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00.svg?logo=TensorFlow&logoColor=white) ![colab](https://user-images.githubusercontent.com/4096485/86174097-b56b9000-bb29-11ea-9240-c17f6bacfc34.png)
 
-- 本專案使用 VGGNet 來分類```[zebra, rhino, elephant, buffalo]```。
-
-- VGG Block
-VGG Block 的構造就是由不同數量 (數量為超參數) 的 3x3 卷積層 (kernel size=3x3, stride=1, padding=”same”)，以及 2x2 的 Maxpooling 組成 (pool size=2, stride=2)
+- 本專案建立一個 AlexNet Model 來分類```[buffalo, elephant, rhino, zebra]```。
+- 另外提供 Colab 版本。
 
 ## Table of content
 
@@ -13,7 +11,6 @@ VGG Block 的構造就是由不同數量 (數量為超參數) 的 3x3 卷積層 
   - [Table of content](#table-of-content)
   - [Requirement](#requirement)
   - [Installation](#installation)
-  - [Folder](#folder)
   - [Usage](#usage)
   - [Contact](#contact)
 
@@ -44,9 +41,25 @@ VGG Block 的構造就是由不同數量 (數量為超參數) 的 3x3 卷積層 
   pip install scikit-learn
   ```
 
-## Folder
+- Matplotlib
+
+  ```bash
+  pip install matplotlib==3.6
+  ```
 
 ## Usage
+
+- Training Model
+  
+  ```Bash
+  python build_model.py
+  ```
+
+- Deploy Model
+
+  ```Bash
+  python main.py
+  ```
 
 ## Contact
 
